@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	Template-Expr
+%define		pdir	HTML
+%define		pnam	Template-Expr
 Summary:	HTML::Template::Expr - HTML::Template extension adding expression support
 Summary(pl):	HTML::Template::Expr - rozszerzenie HTML::Template dodaj±ce obs³ugê wyra¿eñ
 Name:		perl-HTML-Template-Expr
