@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Template-Expr
@@ -15,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	7b34e122677342475cfde168a70d7cab
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-HTML-Template >= 2.4
 BuildRequires:	perl-Parse-RecDescent
 %endif
@@ -41,7 +42,8 @@ dzia³a. Wiêcej szczegó³ów w HTML::Template.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
