@@ -5,7 +5,7 @@
 %define	pdir	HTML
 %define	pnam	Template-Expr
 Summary:	HTML::Template::Expr - HTML::Template extension adding expression support
-#Summary(pl):	
+Summary(pl):	HTML::Template::Expr - rozszerzenie HTML::Template dodaj±ce obs³ugê wyra¿eñ
 Name:		perl-HTML-Template-Expr
 Version:	0.03
 Release:	1
@@ -24,11 +24,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides an extension to HTML::Template which allows
 expressions in the template syntax.  This is purely an addition - all
-the normal HTML::Template options, syntax and behaviors will still work.
-See L<HTML::Template> for details.
+the normal HTML::Template options, syntax and behaviors will still
+work. See HTML::Template for details.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ dostarcza rozszerzenie do HTML::Template, pozwalaj±ce na
+u¿ywanie wyra¿eñ w sk³adni szablonów. Jest to czysty dodatek -
+wszystkie normalne opcje HTML::Template, sk³adnia i zachowanie nadal
+dzia³a. Wiêcej szczegó³ów w HTML::Template.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
