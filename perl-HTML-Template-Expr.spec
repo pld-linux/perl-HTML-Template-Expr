@@ -7,7 +7,7 @@
 Summary:	HTML::Template::Expr - HTML::Template extension adding expression support
 Summary(pl):	HTML::Template::Expr - rozszerzenie HTML::Template dodaj±ce obs³ugê wyra¿eñ
 Name:		perl-HTML-Template-Expr
-Version:	0.03
+Version:	0.04
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
