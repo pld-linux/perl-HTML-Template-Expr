@@ -9,7 +9,7 @@ Summary:	HTML::Template::Expr - HTML::Template extension adding expression suppo
 Summary(pl):	HTML::Template::Expr - rozszerzenie HTML::Template dodaj±ce obs³ugê wyra¿eñ
 Name:		perl-HTML-Template-Expr
 Version:	0.04
-Release:	2
+Release:	3
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
