@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Template-Expr
 Summary:	HTML::Template::Expr - HTML::Template extension adding expression support
-Summary(pl.UTF-8):   HTML::Template::Expr - rozszerzenie HTML::Template dodające obsługę wyrażeń
+Summary(pl.UTF-8):	HTML::Template::Expr - rozszerzenie HTML::Template dodające obsługę wyrażeń
 Name:		perl-HTML-Template-Expr
 Version:	0.07
 Release:	1
