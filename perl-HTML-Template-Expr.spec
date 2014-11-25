@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	HTML
 %define		pnam	Template-Expr
+%include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Template::Expr - HTML::Template extension adding expression support
 Summary(pl.UTF-8):	HTML::Template::Expr - rozszerzenie HTML::Template dodające obsługę wyrażeń
 Name:		perl-HTML-Template-Expr
@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	717ea56c2244b6e2d26a0e477a4d069c
+URL:		http://search.cpan.org/dist/HTML-Template-Expr/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -25,7 +26,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module provides an extension to HTML::Template which allows
-expressions in the template syntax.  This is purely an addition - all
+expressions in the template syntax. This is purely an addition - all
 the normal HTML::Template options, syntax and behaviors will still
 work. See HTML::Template for details.
 
